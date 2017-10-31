@@ -1,0 +1,86 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0033)http://www.activeplaza.com/store/ -->
+
+<HTML><HEAD><title>e-Library System</title>   
+<TD bgColor=#696534 height=1>
+<TABLE>
+<TBODY>
+<TR> 
+<td><img src="images\BUILD.GIF" height=100 width=300></td><td></td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td>
+<font color=red size=8>E-Library System</TD><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align=right><img src="images\HOME.GIF" height=100 width=100></td></TR></TBODY></TABLE>
+	  <TABLE bgcolor="#F8D307" width="100%" height="16">
+ <TR>
+	<TD align="center" ><A HREF="#" target="f3"><font color=#006600 size=2><b>Admin</b></A></TD>
+	<TD align="center"><A HREF="AdminLogin.html"><font color=#006600 size=2><b>Client</b></A></TD>
+	<TD align="center"><A HREF="reg.html"><font color=#006600 size=2><b>Registration</b></A></TD>
+	<TD align="center"><A HREF="contact.jsp"><font color=#006600 size=2><b>ContactUs</b></A></TD>
+</TR>
+</TABLE>
+<TABLE width="100%" bgcolor="#008000">
+<TR>
+	<TD></TD>
+</TR>
+</TABLE>
+<script language="javascript">
+   function use()
+   {
+      frm.T1.focus();
+   }
+   
+function check()
+{
+   k=frm.T1.value.length; 
+   j= frm.T2.value.length;
+   if( (k <=0 ) || ( j<=0))
+   {
+		 if(k<=0)
+	 	{
+			alert('Enter  UserName');
+		 	frm.T1.value=""; 
+			frm.T1.focus();
+			return false;
+		   }
+		if(j<=0)
+		 {
+			alert('Enter  Password');
+			frm.T2.value="";
+			frm.T2.focus();
+			return false;
+		   }
+		   else
+		   {
+		   return true;
+		   }
+   }
+   }
+  </script>
+<BODY  onLoad="use()">
+<form method=post action="AdminLogin.jsp" name=frm onSubmit="return check()">
+<Head> <FONT  face="comic sans ms" size=3 COLOR=#006600><center><hr color=#99CC00>Admin Login Form<hr color=#99CC00></CENTER></font> </Head>
+
+
+<br><br><br>
+<TABLE border=1 align="center">
+<pre>
+<TR>
+		<TD><FONT  face="comic sans ms" size="3" COLOR="#006600">User Name : <input type=textbox name="T1" size=15 maxlength=5>
+		</TD>
+</tr>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr>
+	<td><FONT  face="comic sans ms" size="3" COLOR="#006600">Password</font> : &nbsp;&nbsp;&nbsp;  <input type=password name="T2" size=15 maxlength=15>
+    </td>
+</TR>
+<tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+<tr>
+	<td><input type="submit" value="Login">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" value="Reset"></td>
+</tr>
+</pre>
+ </TABLE>
+
+</form>
+</BODY>
+</HTML>

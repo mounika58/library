@@ -1,0 +1,131 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0033)http://www.activeplaza.com/store/ -->
+
+<HTML><HEAD><title>e-Library System</title>
+<script language="javascript">
+function validateForm(formObj)
+{
+
+if(formObj.login.value.length==0)
+{
+alert("Please enter login Name...!");
+formObj.login.focus();
+return false;
+}
+
+if(formObj.email.value.length==0)
+{
+alert("Please enter email...!");
+formObj.email.focus();
+return false;
+}
+if(formObj.password.value.length==0)
+{
+alert("Please enter password...!");
+formObj.password.focus();
+return false;
+}
+if(formObj.address.value.length==0)
+{
+alert("Please enter Address...!");
+formObj.address.focus();
+return false;
+}
+
+if(formObj.city.value.length==0)
+{
+alert("Please enter City...!");
+formObj.city.focus();
+return false;
+}
+if(formObj.mobile.value.length==10)
+{
+alert("Please enter MobileNumber...!");
+formObj.mobile.focus();
+return false;
+}
+
+if(formObj.education.value.length==0)
+{
+alert("Please enter Education...!");
+formObj.education.focus();
+return false;
+}
+
+if(formObj.employment.value.length==0)
+{
+alert("Please enter Employment...!");
+formObj.employment.focus();
+return false;
+}
+}
+ </script>
+
+<TD bgColor=#696534 height=1>
+<TABLE>
+<TBODY>
+<TR> 
+<td><img src="images\BUILD.GIF" height=100 width=300></td><td></td><td></td><td></td><td></td><td></td>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+<td>
+<font color=red size=8>E-Library System</TD><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td align=right><img src="images\HOME.GIF" height=100 width=100></td></TR></TBODY></TABLE>
+	  <TABLE bgcolor="#F8D307" width="100%" height="16">
+ <TR>
+	<TD align="center" ><A HREF="AdminLogin2.html" target="f3"><font color=#006600 size=2><b>Admin</b></A></TD>
+	<TD align="center"><A HREF="AdminLogin.html"><font color=#006600 size=2><b>Client</b></A></TD>
+	<TD align="center"><A HREF="reg.html"><font color=#006600 size=2><b>Registration</b></A></TD>
+	<TD align="center"><A HREF="contact.jsp"><font color=#006600 size=2><b>ContactUs</b></A></TD>
+</TR>
+</TABLE>
+    <body><br><br><center>
+<form method="get" action="staffsignup.jsp" onSubmit="return validateForm(this)";>
+<h1 align="center"><font color="red">Registration Form</font></h1>
+<table>
+
+<tr>
+
+<td><h4>Login Name</h4></td>
+<td>
+	<input type="text" name="login" size="20" onblur="javascript:checkAvailability()" placeholder= Login Name><div id="reply"></div>
+</td>
+</tr>
+<tr>
+<td><h4>Email-id</h4></td><td><input type="text" name="email" size="20" placeholder=Email></td>
+
+</tr>
+<tr>
+<td><h4>Password</h4></td><td><input type="password" name="password" size="20" placeholder=password></td>
+
+
+</tr>
+
+<tr>
+
+
+<td><h4>Gender</h4></td><td><select name="gender">
+				<option>Male</option>
+				<option>female</option></select></td>
+</tr>
+
+<tr>
+<td><h4>Address </h4></td><td><input type="text" name="address" size="20" placeholder=Address></td>
+</tr>
+<tr>
+<td><h4>City</h4></td><td><input type="text" name="city" size="20" placeholder=City></td>
+</tr>
+<tr>
+<td><h4>mobile </h4></td><td><input type="text" name="mobile" size="20" placeholder=Mobile></td>
+</tr>
+<tr>
+<td><h4>Education</h4></td><td><input type="text" name="education" size="20" placeholder=Education></td>
+
+
+</tr>
+<tr><td></td></tr>
+<tr><td colspan="4" align="center">
+<input type="submit" value="click to Submit" style="color: #000080; position: absolute;  border: 4px solid #000080; background-color: #FFFFFF"></td></tr>
+</table>
+
+</form>        </form>
+    </body>
+</html>

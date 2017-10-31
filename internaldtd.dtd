@@ -1,0 +1,13 @@
+<?xml version="1.O" encoding="UTF-8"?>
+<!DOCTYPE
+ [
+  <!ELEMENT textbook(name,edition,author)>
+ <!ELEMENT name(#PCDATA)>
+ <!ELEMENT edition(#PCDATA)>
+<!ELEMENT author(#PCDATA)>
+ ]>
+<textbook>
+<name>praveen</name>
+<edition>b</edition>
+<author>a</author>
+</textbook>

@@ -1,0 +1,19 @@
+body {
+width: 90%;
+margin: 0 auto;}
+#content {overflow: auto;}
+ #nav, #footer {
+margin: 1%;}
+.column1, .column2, .column3,.column4,.column5,.column6 {
+width: 31.3%;
+float: left;
+margin: 1%;}
+.column3 {margin-right: 0%;}
+#nav, #footer {
+background-color: #c0c0c0;
+padding: 0.5em 0;}
+#feature,.article {
+height: 10em;
+margin-bottom: 1em;
+background-color: #c0c0c0;}
+</body>
